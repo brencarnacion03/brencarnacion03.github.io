@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brenda Encarnacion | Network Engineer & CS Professional</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Fira+Code:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Keyboard Background Animation -->
+    <div class="keyboard-bg" id="keyboard-bg"></div>
+    
+    <!-- Scan Line Effect -->
+    <div class="scanline"></div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-logo">
+            <span class="prompt">&gt;_</span> <span class="blink">brenda</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-link">/home</a></li>
+            <li><a href="#about" class="nav-link">/about</a></li>
+            <li><a href="#education" class="nav-link">/education</a></li>
+            <li><a href="#skills" class="nav-link">/skills</a></li>
+            <li><a href="#experience" class="nav-link">/experience</a></li>
+            <li><a href="#projects" class="nav-link">/projects</a></li>
+            <li><a href="#contact" class="nav-link">/contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="terminal-window">
+            <div class="terminal-header">
+                <div class="terminal-dots">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                </div>
+                <span class="terminal-title">bash — portfolio</span>
+            </div>
+            <div class="terminal-body">
+                <div class="terminal-line">
+                    <span class="prompt-symbol">$</span>
+                    <span class="typed-text" id="hero-typed"></span>
+                    <span class="cursor">|</span>
+                </div>
+                <div class="terminal-output" id="hero-output">
+                    <br>
+                    <p class="output-line fade-in">╔══════════════════════════════════════════════╗</p>
+                    <p class="output-line fade-in">║                                              ║</p>
+                    <p class="output-line fade-in">║   <span class="highlight">BRENDA ENCARNACION</span>                     ║</p>
+                    <p class="output-line fade-in">║                                              ║</p>
+                    <p class="output-line fade-in">║   Engineer II – Network Operations           ║</p>
+                    <p class="output-line fade-in">║   Verizon Wireless                           ║</p>
+                    <p class="output-line fade-in">║                                              ║</p>
+                    <p class="output-line fade-in">║   M.S. & B.S. Computer Science               ║</p>
+                    <p class="output-line fade-in">║   New York Institute of Technology            ║</p>
+                    <p class="output-line fade-in">║                                              ║</p>
+                    <p class="output-line fade-in">╚══════════════════════════════════════════════╝</p>
+                    <br>
+                    <p class="output-line fade-in"><span class="success">[READY]</span> Scroll down to explore...</p>
+                </div>
+            </div>
+        </div>
+        <div class="floating-keys" id="floating-keys"></div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <h2 class="section-title"><span class="prompt-symbol">$</span> cat about.txt</h2>
+            <div class="terminal-card">
+                <div class="terminal-header">
+                    <div class="terminal-dots">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <span class="terminal-title">about.txt</span>
+                </div>
+                <div class="terminal-body">
+                    <p class="about-text typing-reveal">
+                        Network Operations Engineer at <span class="highlight">Verizon Wireless</span> with a strong 
+                        foundation in telecommunications, core network troubleshooting, and automation. 
+                        I hold both a Master's and Bachelor's degree in Computer Science from the 
+                        <span class="highlight">New York Institute of Technology</span>.
+                    </p>
+                    <br>
+                    <p class="about-text typing-reveal">
+                        I specialize in root cause analysis, Layer 3 signaling, GTP tunneling, and 
+                        leveraging Python to automate network diagnostics. From monitoring real-time 
+                        alarms in a 24x7 NOC environment to executing deep-dive RCA on production 
+                        infrastructure — I thrive at the intersection of networking and software engineering.
+                    </p>
+                    <br>
+                    <p class="about-text typing-reveal">
+                        <span class="keyword">Honors:</span> President's List | National Honor Society | XAE President
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section" id="education">
+        <div class="container">
+            <h2 class="section-title"><span class="prompt-symbol">$</span> cat education.log</h2>
+            <div class="timeline">
+                <div class="timeline-item terminal-card">
+                    <div class="terminal-header">
+                        <div class="terminal-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span class="terminal-title">masters_degree.md</span>
+                    </div>
+                    <div class="terminal-body">
+                        <p><span class="keyword">degree:</span> Master of Science in Computer Science</p>
+                        <p><span class="keyword">school:</span> <span class="string">"New York Institute of Technology"</span></p>
+                        <p><span class="keyword">graduated:</span> <span class="string">"December 2024"</span></p>
+                        <p><span class="keyword">status:</span> <span class="success">COMPLETED</span></p>
+                    </div>
+                </div>
+                <div class="timeline-item terminal-card">
+                    <div class="terminal-header">
+                        <div class="terminal-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span class="terminal-title">bachelors_degree.md</span>
+                    </div>
+                    <div class="terminal-body">
+                        <p><span class="keyword">degree:</span> Bachelor of Science in Computer Science</p>
+                        <p><span class="keyword">school:</span> <span class="string">"New York Institute of Technology"</span></p>
+                        <p><span class="keyword">graduated:</span> <span class="string">"May 2023"</span></p>
+                        <p><span class="keyword">honors:</span> <span class="string">"President's List, National Honor Society, XAE President"</span></p>
+                        <p><span class="keyword">status:</span> <span class="success">COMPLETED</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section" id="skills">
+        <div class="container">
+            <h2 class="section-title"><span class="prompt-symbol">$</span> ls skills/</h2>
+            <div class="skills-grid">
+                <div class="skill-category terminal-card">
+                    <div class="terminal-header">
+                        <div class="terminal-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span class="terminal-title">networking/</span>
+                    </div>
+                    <div class="terminal-body">
+                        <div class="skill-tags">
+                            <span class="skill-tag">TCP/IP</span>
+                            <span class="skill-tag">BGP</span>
+                            <span class="skill-tag">OSPF</span>
+                            <span class="skill-tag">DNS</span>
+                            <span class="skill-tag">DHCP</span>
+                            <span class="skill-tag">VLANs</span>
+                            <span class="skill-tag">VPNs</span>
+                            <span class="skill-tag">Wi-Fi</span>
+                            <span class="skill-tag">Routing & Switching</span>
+                            <span class="skill-tag">Layer 3 Trace Analysis</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category terminal-card">
+                    <div class="terminal-header">
+                        <div class="terminal-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span class="terminal-title">noc_tools/</span>
+                    </div>
+                    <div class="terminal-body">
+                        <div class="skill-tags">
+                            <span class="skill-tag">Cisco CLI (IOS/NX-OS)</span>
+                            <span class="skill-tag">Linux (Ubuntu)</span>
+                            <span class="skill-tag">PuTTY</span>
+                            <span class="skill-tag">nGeniusOne</span>
+                            <span class="skill-tag">SevOne</span>
+                            <span class="skill-tag">NOI</span>
+                            <span class="skill-tag">Incident Management</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category terminal-card">
+                    <div class="terminal-header">
+                        <div class="terminal-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span class="terminal-title">telecom/</span>
+                    </div>
+                    <div class="terminal-body">
+                        <div class="skill-tags">
+                            <span class="skill-tag">4G LTE</span>
+                            <span class="skill-tag">5G NR Architecture</span>
+                            <span class="skill-tag">Fixed Wireless Access</span>
+                            <span class="skill-tag">RAN Signaling</span>
+                            <span class="skill-tag">RF Fundamentals</span>
+                            <span class="skill-tag">DUKO</span>
+                            <span class="skill-tag">SANE</span>
+                            <span class="skill-tag">USM</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category terminal-card">
+                    <div class="terminal-header">
+                        <div class="terminal-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span class="terminal-title">languages/</span>
+                    </div>
+                    <div class="terminal-body">
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">C++</span>
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">REST APIs</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category terminal-card">
+                    <div class="terminal-header">
+                        <div class="terminal-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span class="terminal-title">certifications/</span>
+                    </div>
+                    <div class="terminal-body">
+                        <div class="skill-tags">
+                            <span class="skill-tag cert-tag">AWS Certification (In Progress)</span>
+                            <span class="skill-tag cert-tag">Google AI Professional Certificate</span>
+                            <span class="skill-tag cert-tag">Microsoft Excel Formulas</span>
+                            <span class="skill-tag cert-tag">APIs & RESTful APIs</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section" id="experience">
+        <div class="container">
+            <h2 class="section-title"><span class="prompt-symbol">$</span> cat experience.json</h2>
+            <div class="experience-list">
+                <div class="experience-item terminal-card">
+                    <div class="terminal-header">
+                        <div class="terminal-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span class="terminal-title">verizon_engineer_ii.json</span>
+                    </div>
+                    <div class="terminal-body">
+                        <p><span class="keyword">"title"</span>: <span class="string">"Engineer II – Network Operations"</span>,</p>
+                        <p><span class="keyword">"company"</span>: <span class="string">"Verizon Wireless"</span>,</p>
+                        <p><span class="keyword">"location"</span>: <span class="string">"145 Chubb Way"</span>,</p>
+                        <p><span class="keyword">"period"</span>: <span class="string">"Sept. 2025 – Present"</span>,</p>
+                        <p><span class="keyword">"status"</span>: <span class="success">"ACTIVE"</span>,</p>
+                        <p><span class="keyword">"responsibilities"</span>: [</p>
+                        <p class="indent"><span class="string">"Performed deep-dive RCA on logical signaling and GTP tunneling to resolve data stalls and optimize end-to-end user experience"</span>,</p>
+                        <p class="indent"><span class="string">"Diagnosed complex data-flow and Layer 1-3 connectivity issues leveraging DNS, DHCP, and VLAN troubleshooting protocols"</span>,</p>
+                        <p class="indent"><span class="string">"Analyzed network logging and performance data sets to troubleshoot and resolve production infrastructure problems"</span>,</p>
+                        <p class="indent"><span class="string">"Correlated KPI trends (packet loss, throughput, latency) with network health to diagnose performance degradation"</span>,</p>
+                        <p class="indent"><span class="string">"Executed Live Subscriber Traces (Layer 3 signaling) to pinpoint failures in attachment and handovers"</span>,</p>
+                        <p class="indent"><span class="string">"Utilized Python to parse network logging data sets, automating script-based checks to reduce manual troubleshooting"</span></p>
+                        <p>]</p>
+                    </div>
+                </div>
+
+                <div class="experience-item terminal-card">
+                    <div class="terminal-header">
+                        <div class="terminal-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span class="terminal-title">verizon_engineer_i.json</span>
+                    </div>
+                    <div class="terminal-body">
+                        <p><span class="keyword">"title"</span>: <span class="string">"Engineer I – Network Assurance (NOC)"</span>,</p>
+                        <p><span class="keyword">"company"</span>: <span class="string">"Verizon Wireless"</span>,</p>
+                        <p><span class="keyword">"location"</span>: <span class="string">"145 Chubb Way"</span>,</p>
+                        <p><span class="keyword">"period"</span>: <span class="string">"Feb. 2024 – Sept. 2025"</span>,</p>
+                        <p><span class="keyword">"responsibilities"</span>: [</p>
+                        <p class="indent"><span class="string">"Monitored real-time network alarms and performed equipment health checks to proactively detect faults"</span>,</p>
+                        <p class="indent"><span class="string">"Managed end-to-end network and environmental outage incidents via internal ticketing system"</span>,</p>
+                        <p class="indent"><span class="string">"Configured and troubleshot Cisco routing and switching, supporting high-availability enterprise infrastructure"</span>,</p>
+                        <p class="indent"><span class="string">"Participated in after-hours on-call support program for 24x7 production network infrastructure"</span></p>
+                        <p>]</p>
+                    </div>
+                </div>
+
+                <div class="experience-item terminal-card">
+                    <div class="terminal-header">
+                        <div class="terminal-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span class="terminal-title">verizon_sales.json</span>
+                    </div>
+                    <div class="terminal-body">
+                        <p><span class="keyword">"title"</span>: <span class="string">"Sales & Solution Representative"</span>,</p>
+                        <p><span class="keyword">"company"</span>: <span class="string">"Verizon Wireless"</span>,</p>
+                        <p><span class="keyword">"location"</span>: <span class="string">"581 Broadway"</span>,</p>
+                        <p><span class="keyword">"period"</span>: <span class="string">"Jun. 2022 – Feb. 2024"</span>,</p>
+                        <p><span class="keyword">"responsibilities"</span>: [</p>
+                        <p class="indent"><span class="string">"Exceeded monthly sales quota by an average of 165%, driving substantial revenue growth"</span>,</p>
+                        <p class="indent"><span class="string">"Troubleshot retail device and connectivity issues for customers"</span></p>
+                        <p>]</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+        <div class="container">
+            <h2 class="section-title"><span class="prompt-symbol">$</span> ls projects/</h2>
+            <div class="projects-grid">
+                <div class="project-card terminal-card">
+                    <div class="terminal-header">
+                        <div class="terminal-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span class="terminal-title">network_log_parser/</span>
+                    </div>
+                    <div class="terminal-body">
+                        <h3 class="project-name">> Network Log Parser</h3>
+                        <p class="project-desc">Python-based automation tool for parsing network logging data sets, reducing manual troubleshooting time for NOC operations.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Automation</span>
+                            <span class="tech-tag">Network Ops</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">[GitHub]</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card terminal-card">
+                    <div class="terminal-header">
+                        <div class="terminal-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span class="terminal-title">kpi_dashboard/</span>
+                    </div>
+                    <div class="terminal-body">
+                        <h3 class="project-name">> KPI Correlation Dashboard</h3>
+                        <p class="project-desc">Visualization tool for correlating network KPI trends — packet loss, throughput, and latency — with infrastructure health metrics.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">Data Analysis</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">[GitHub]</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card terminal-card">
+                    <div class="terminal-header">
+                        <div class="terminal-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span class="terminal-title">5g_architecture_study/</span>
+                    </div>
+                    <div class="terminal-body">
+                        <h3 class="project-name">> 5G NR Architecture Research</h3>
+                        <p class="project-desc">Graduate research project analyzing 5G New Radio architecture, RAN signaling procedures, and Fixed Wireless Access optimization.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">5G NR</span>
+                            <span class="tech-tag">RAN</span>
+                            <span class="tech-tag">Research</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">[Paper]</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="projects-note" style="color: var(--text-secondary); font-size: 0.8rem; margin-top: 2rem; text-align: center;">
+                <span class="prompt-symbol">$</span> <em>// Update project links with your actual GitHub repos</em>
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="container">
+            <h2 class="section-title"><span class="prompt-symbol">$</span> ./contact --init</h2>
+            <div class="contact-terminal terminal-card">
+                <div class="terminal-header">
+                    <div class="terminal-dots">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <span class="terminal-title">contact — send_message</span>
+                </div>
+                <div class="terminal-body">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label><span class="prompt-symbol">$</span> enter name:</label>
+                            <input type="text" name="name" required placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label><span class="prompt-symbol">$</span> enter email:</label>
+                            <input type="email" name="email" required placeholder="john@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label><span class="prompt-symbol">$</span> enter subject:</label>
+                            <input type="text" name="subject" required placeholder="Let's collaborate">
+                        </div>
+                        <div class="form-group">
+                            <label><span class="prompt-symbol">$</span> enter message:</label>
+                            <textarea name="message" rows="5" required placeholder="Your message here..."></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <span class="btn-text">$ send_message --execute</span>
+                            <span class="btn-loading">Sending...</span>
+                        </button>
+                    </form>
+                    <div class="contact-links">
+                        <a href="mailto:brencarnacion03@gmail.com" class="contact-link">
+                            <span class="prompt-symbol">></span> email: brencarnacion03@gmail.com
+                        </a>
+                        <a href="tel:+13479907188" class="contact-link">
+                            <span class="prompt-symbol">></span> phone: (347) 990-7188
+                        </a>
+                        <a href="https://linkedin.com/in/" target="_blank" class="contact-link">
+                            <span class="prompt-symbol">></span> linkedin: linkedin.com/in/brenda-encarnacion
+                        </a>
+                        <a href="https://github.com/" target="_blank" class="contact-link">
+                            <span class="prompt-symbol">></span> github: github.com/brencarnacion
+                        </a>
+                        <p class="contact-link" style="cursor: default;">
+                            <span class="prompt-symbol">></span> location: Kearny, New Jersey
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">
+                <span class="prompt-symbol">$</span> echo "Built with <span class="highlight">&lt;code/&gt;</span> and ☕"
+            </p>
+            <p class="footer-copyright">© 2025 Brenda Encarnacion | All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
