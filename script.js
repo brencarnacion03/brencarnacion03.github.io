@@ -61,6 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initKeyboardListener();
     initMatrixRain();
     initContactForm();
+    initSlideshow();
 });
 
 // ===== KEYBOARD BACKGROUND PARTICLES =====
@@ -242,6 +243,81 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // ===== CUSTOM CURSOR TRAIL (subtle) =====
 let trail = [];
 const trailLength = 8;
+
+// ===== SLIDESHOW =====
+function initSlideshow() {
+    const slides = document.querySelectorAll('.slide');
+    const prevBtn = document.getElementById('prev-btn');
+    const nextBtn = document.getElementById('next-btn');
+    const dotsContainer = document.getElementById('slide-dots');
+    
+    if (!slides.length || !prevBtn || !nextBtn) return;
+
+    let currentSlide = 0;
+    let autoPlayInterval;
+
+    // Create dots
+    slides.forEach((_, i) => {
+        const dot = document.createElement('div');
+        dot.className = `slide-dot${i === 0 ? ' active' : ''}`;
+        dot.addEventListener('click', () => goToSlide(i));
+        dotsContainer.appendChild(dot);
+    });
+
+    function goToSlide(index, direction = 'right') {
+        const dots = document.querySelectorAll('.slide-dot');
+        
+        // Remove active from current
+        slides[currentSlide].classList.remove('active');
+        dots[currentSlide].classList.remove('active');
+
+        // Update index
+        currentSlide = index;
+        if (currentSlide >= slides.length) currentSlide = 0;
+        if (currentSlide < 0) currentSlide = slides.length - 1;
+
+        // Add active to new slide
+        slides[currentSlide].classList.add('active');
+        dots[currentSlide].classList.add('active');
+    }
+
+    function nextSlide() {
+        goToSlide(currentSlide + 1, 'right');
+    }
+
+    function prevSlide() {
+        goToSlide(currentSlide - 1, 'left');
+    }
+
+    // Controls
+    nextBtn.addEventListener('click', () => {
+        nextSlide();
+        resetAutoPlay();
+    });
+
+    prevBtn.addEventListener('click', () => {
+        prevSlide();
+        resetAutoPlay();
+    });
+
+    // Auto-play
+    function startAutoPlay() {
+        autoPlayInterval = setInterval(nextSlide, 4000);
+    }
+
+    function resetAutoPlay() {
+        clearInterval(autoPlayInterval);
+        startAutoPlay();
+    }
+
+    startAutoPlay();
+
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowRight') { nextSlide(); resetAutoPlay(); }
+        if (e.key === 'ArrowLeft') { prevSlide(); resetAutoPlay(); }
+    });
+}
 
 document.addEventListener('mousemove', (e) => {
     const dot = document.createElement('div');
